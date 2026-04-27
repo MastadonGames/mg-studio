@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #F27D26;
+  --color-ink-900: #050505;
+  --color-ink-800: #111111;
+  --color-ink-700: #222222;
+  
+  --font-display: 'Anton', sans-serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--color-ink-900);
+  color: white;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: var(--color-brand);
+  color: var(--color-ink-900);
+}
